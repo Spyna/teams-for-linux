@@ -2,6 +2,10 @@
 
 > Unofficial Microsoft Teams client for Linux
 
+
+Unofficial Microsoft Outlook client for Linux using [Electron](https://electronjs.org/).
+It uses the Web App and wrapps it as a standalone application using Electron.
+
 ## Install
 
 You can download the tar.gz, deb or AppImage from the [releases page](https://github.com/Spyna/teams-for-linux/releases).
@@ -23,10 +27,6 @@ You can download the tar.gz, deb or AppImage from the [releases page](https://gi
 
 
 ![Teams for linux Login feature screenshot](./images/teams-for-linux-screenshot-login.jpg)
-
-
-Unofficial Microsoft Outlook client for Linux using [Electron](https://electronjs.org/).
-It uses the Web App and wrapps it as a standalone application using Electron.
 
 
 ## Run from source
