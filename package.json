@@ -1,0 +1,68 @@
+{
+  "name": "teams-for-linux",
+  "version": "1.0.0",
+  "description": "Unofficial client for Microsoft Teams for Linux",
+  "homepage": "https://github.com/Spyna/teams-for-linux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "Teams",
+    "Microsoft Teams",
+    "electron"
+  ],
+  "author": {
+    "name": "Spyna",
+    "email": "iam.lorenzo.spinelli@gmail.com",
+    "url": "https://github.com/Spyna"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "electron-context-menu": "^0.12.1",
+    "electron-window-state": "^5.0.3",
+    "open": "^6.1.0"
+  },
+  "build": {
+    "appId": "teams-for-linux",
+    "asar": false,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "synopsis": "Teams for Linux",
+      "executableName": "teams-for-linux",
+      "category": "Network;Office;",
+      "desktop": {
+        "Name": "Teams for Linux",
+        "Comment": "Unofficial client for Microsoft Teams for Linux",
+        "StartupWMClass": "teams-for-linux"
+      },
+      "target": [
+        "AppImage",
+        "deb",
+        "tar.gz"
+      ]
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
