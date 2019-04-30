@@ -36,3 +36,5 @@ $ npm i
 $ npm start
 ```
 
+
+[![Analytics](https://ga-beacon.appspot.com/UA-89584671-2/github/teams-for-linux)](https://github.com/igrigorik/ga-beacon)
