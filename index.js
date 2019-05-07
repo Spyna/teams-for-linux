@@ -7,6 +7,7 @@ const DEFAULT_WINDOW_WIDTH = 1024;
 const DEFAULT_WINDOW_HEIGHT = 800;
 const open = require("open");
 const contextMenu = require("electron-context-menu");
+const applicationMenu = require('./ApplicationMenu');
 
 let shouldExit = false;
 const iconPath = path.join(__dirname, "teams-icon.png");
@@ -15,6 +16,7 @@ let tray = null;
 function createWindow() {
   tray = createTray(iconPath);
   tray.setTitle("Teams for linux");
+  Menu.setApplicationMenu(applicationMenu)
 
   let windowState = windowStateKeeper({
     defaultWidth: DEFAULT_WINDOW_WIDTH,
