@@ -1,7 +1,7 @@
 const { Menu } = require("electron");
 const pkg = require("./package.json");
 const path = require("path");
-const aboutIcon = path.join(__dirname, "build/icons/24x24.png");
+const aboutIcon = path.join(__dirname, "teams-icon-24x24.png");
 const open = require("open");
 
 const template = [
