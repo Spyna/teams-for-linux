@@ -55,6 +55,9 @@ function createWindow() {
 
   window.webContents.on("new-window", (event, url) => {
     event.preventDefault();
+    if(url === 'about:blank'){
+      return;
+    }
     open(url, err => {
       if (err) {
         console.error(`exec error: ${err.message}`);
